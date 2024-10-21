@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Document</title>
 </head>
 <body>
+
+<div class="container">
+    <form action="submit" id="login-form">
+        <h1 id="form-title">Sign in</h1>
+        
+        <input type="text" name="" id="username" placeholder="Enter your username"><br>
+       
+        <input type="email" name="" id="email" placeholder="Enter your email"><br>
+        
+        <input type="password" name="" id="password" placeholder="Enter your password"><br>
+        
+        <input type="password" name="" id="confirmPassword" placeholder="confirm Password"><br>
+
+        <button type="submit" id="form-btn">Sign in</button>
+        <p id="form-description"> i don't have account ? <a href="#" id="sign-click">Sign up</a></p>
+    </form>
+</div>
     
+
+<script src="../js/login.js"></script>
 </body>
 </html>
