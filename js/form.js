@@ -28,7 +28,7 @@ submitBtn.addEventListener('click', (e)=>{
         alert('please form fill')
         return
     }
-
+    document.body.style.marginTop='10rem'
     submiteModel.style.display = 'block'
     submittedEmail.textContent=email.value;
     submittedName.textContent=userName.value
