@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="allInOne">
+    <div class="formContainer">
+        <form action="" >
+            <h1>Vote Registration</h1>
+            <label for="">Email:</label><br>
+            <input type="email" name="" id="email"><br>
+            <label for="">name:</label><br>
+            <input type="text" name="" id="name"><br>
+            <label for="">phone:</label><br>
+            <input type="text" name="" id="phone"><br>
+            <label for="">Candidate:</label><br>
+            <select name="" id="Candidate" >
+                <option value="" selected="0"></option>
+                <option >Mc Hamouda</option>
+                <option >Mr sharafdin</option>
+                <option >Abdinasir Tman</option>
+            </select><br>
+
+            <button id="btn-submit" type="submit" ">Submit</button>
+        </form>
+    </div>
+    <div class="submiteModel">
+    <div class="submitted-data">
+        <h1>Submitted Data</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Candidate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="submittedEmail"></td>
+                    <td id="submittedName"></td>
+                    <td id="submittedPhone"></td>
+                    <td id="submittedCandidate"></td>
+                </tr>
+            </tbody>
+        </table>
+
+      
+        <div class="button-container">
+            <button class="btn update" >Update</button>
+            <button class="btn delete" >Add to The List</button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script src="../js/form.js"></script>
+</body>
+</html>
