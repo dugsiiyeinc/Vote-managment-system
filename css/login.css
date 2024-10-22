@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+   font-family: "Inria Sans", sans-serif; 
+   box-sizing: border-box;
+}
+
+ body{
+    
+background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAKYArwMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMABAUG/8QAMRAAAgIBAQQHBwUBAAAAAAAAAAECAxESBCEiMjFBUVJhcZEFM0JTgaGxExQjYtFD/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EABkRAQEBAQEBAAAAAAAAAAAAAAARAVESAv/aAAwDAQACEQMRAD8A+/MYJpxYwTAYJggAOAmABhsGAGDYDg2ApTDYBgIGADAAABgAKYJgFMEABCAIGCYIGCYIGDg2AhQwHAcBwAuDYGwbAC4BgfAAFwAbAMAKAZgYQoBgAKYOAqIACAIBCjIKCshkZIIGQcBSCkAMBwHA2AEwbA+DYCkwDA+ANBCYAO0K0AgB2DACGwOojxgBNQKQrKwrLwqCx5YUBDIMigoCGQUUFAQ6AyQyRkhgrYDgKQcADAMD4NgBMAaHwBoCbQrRTBtIEtIygVUB4wAlGBWNZWFZ0V1EWI11HTXUVhUJftVdHCuKXYuoNR84goCCiuZkFAQyAKHQY1y7uPMoqo/FIKVDIdKIckCqIyiEZRl3QpdJsFNEjaAItAwVcTKIElEZQKqBSNYEo1loVFY1gltFNX9pdkf9CnhUNZbTRzy39i3s4rNrulwx4F4dPqQwCrXbZZZur/jj4dLOdRHURZW1x+LPgt5UcSjEaFMpcp0V7PGPvN77OotkJEI7L8yX0RRRjHljgfUUrrss93HPj1epFiGTLi4Y732Lez0YbJH/AKb/AAXQVSrq4a4peSwKsefHZbJc2IefT6FVs9ceaTf2R0y0iOEfEESxGPLFGcin6Me8zft495giWQM6Fs0fmP0N+2j8x/YEc+k3DHmkiz2aPem/qI6K/H1AT9auPLlivaZfDFL7sd1x7orQEZSlLmk2DA7JyCA5iStl5BYjRUTm5S5ssXBXSMoBFNQYRlZLFcW2U2XZJX8UuGvt635HpQjXRHTCOF+SNZiFOxRjxW732LoX+nQ5Rjwx3LsROdhGVgaWlYTcyLmLqCVfUZSI6gqQF1IZSIpjJhVtRnIlqNqAdyEkwNithAkycmFsRsBWTY7BgIng2koojxgUTUCtdWovVRqOmMNPL0kq5jTsITtIztISsBurSsJuZFzF1hKtrNqIqQyZUWTGTJJjJkVZSGUiKYyYVXUbUS1G1AUchWxGwAFsBgpBAwFRHUS1dOoKlCs6qqO8VhXGIt19dEc2SUV1LrfkiLDpd04ds9o10twqUZz6+xHFtftGy/gq/jr+78zhZYzv1x1ysJuZJzFyVlXUZMmmMmBVMdMimOmBVMZMkmMmFVTDkkmHJBXUbJNMdBRGSAkUjEAKJSEB1GMeKySgvF4Flt1Nfu4uT9EFdFdPeDbdVRH+SSX5fkjy7vaF0uWWheHT6nHKWrilvfa+kQ9cejtHtOXLRHH9pb39EebZOUpapSbb628sDYrKxusxWZgCBkKFCA6YUxENkB0xkyaYUwqiYyZPIcgVTGTI5DkKupR7w36sfE5smyCun9x3Yr8iS2izvY8txDJmwUzkK2DIMhBbFbA2BsDNiszYAjAMAABMYAhMYAhMYA5Dkxgo5NkxgDk2TGA2QZMYAZBkxgA2AxggAZjAABjAf//Z') ;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+width: 100vw;
+
+}
+
+ .container{
+    background-color: rgba(45, 226, 250,0.4);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+   margin-top: 50rem;
+    width: 340px;
+    align-items: center;
+    margin: 50px auto;
+ }
+
+ #login-form{
+    padding: 25px;
+    margin-top: 8rem;
+ }
+
+ #login-form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px ;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    
+ }
+ #login-form #form-title{
+    text-align: center;
+    margin-bottom: 1.8rem;
+   
+ }
+
+ #login-form  #form-btn{
+    width: 100%;
+    border: none;
+    height: 30px;
+    background-color: #2DE2FA;
+    font-size: large;
+    padding: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+ }
+ #login-form  #form-btn:hover{
+   
+      background-color: #009dd8;
+  
+ }
+ #username{
+    display: none;
+ }
+ #confirmPassword{
+    display: none;
+ }
+ #form-description a{
+    text-decoration: none;
+    color: black;
+ }
+
+
+
+
+ @media screen and (max-width: 480px) {
+   body{
+      height: 82vh;
+   }
+ }
+ @media (min-width: 481px) and (max-width: 1094px) {
+   body{
+      height: 80vh;
+   }
+   .container{
+      margin: 300px auto;
+   }
+ }
