@@ -149,10 +149,18 @@ body{
 }
 .box img{
     border-radius: 5px;
-    height: 400px;
+    height: 250px;
     width: 200px;
 }
 
+.btnall{
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2DE2FA;
+    color: black;
+    border-radius: 10px;
+}
 
 @media(max-width:700px){
     .navbar-links a:hover{
