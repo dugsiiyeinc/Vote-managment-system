@@ -138,7 +138,7 @@ body{
 .box-Candidates .box{
     background-color: white;
     border-radius: 10PX;
-    box-shadow: 2PX 2PX 5PX 5PX  rgba(0, 0, 0, 0.486);
+    box-shadow: 2PX 2PX 5PX 5PX  rgba(0, 0, 0,0.2);
     width: 300PX;
     padding: 20PX;
     display: flex;
