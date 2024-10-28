@@ -57,7 +57,20 @@ a{
     text-decoration: none;
     text-align: center;
 }
-
+.back{
+    display: flex;
+    padding-left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color:#2DE2FA ;
+    padding: 10px ;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    
+}
 
 
 @media(max-width:700px){
