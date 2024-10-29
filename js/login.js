@@ -55,8 +55,8 @@ loginForm.addEventListener("submit", (event) => {
       if (findUser) {
         localStorage.setItem("currentUser", JSON.stringify(findUser));
        window.location.href='home.html'
-       list.document.style.display='block'
-       sigin.innerHTML ='log out'
+       list.style.display='block'
+       sigin.textContent ='log out'
 
       }else{
         alert(`this user " ${email.value} " does not exist`)

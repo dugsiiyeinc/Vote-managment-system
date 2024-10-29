@@ -8,6 +8,8 @@ const submittedCandidate = document.querySelector('#submittedCandidate');
 const submittedPhone = document.querySelector('#submittedPhone');
 const submittedName = document.querySelector('#submittedName');
 const submittedEmail = document.querySelector('#submittedEmail');
+const update = document.querySelector('.update')
+const addList = document.querySelector('.delete')
 
 
 submitBtn.addEventListener('click', (e)=>{
@@ -15,26 +17,74 @@ submitBtn.addEventListener('click', (e)=>{
 
     if (userName.value.trim()   === '') {
 
-        alert('please form fill')
+        alert('please fill the form')
         return
     } 
     else if(phone.value.trim() === ''){
-        alert('please form fill')
+        alert('please fill the form')
         return
     }else if(candidate.value === ''){
-        alert('please form fill')
+        alert('please fill the form')
         return
     }else if(email.value.trim()  === ''){
-        alert('please form fill')
+        alert('please fill the form')
         return
     }
-    document.body.style.marginTop='10rem'
+    
     submiteModel.style.display = 'block'
     submittedEmail.textContent=email.value;
     submittedName.textContent=userName.value
     submittedPhone.textContent=phone.value
     submittedCandidate.textContent=candidate.value
 
+    email.value=''
+    userName.value=''
+    phone.value=''
+    candidate.value=''
+
+    submitBtn.textContent='Submit'
+
+  
     
+})
+
+update.addEventListener('click',()=>{
+    email.value=submittedEmail.textContent;
+    userName.value=submittedName.textContent
+    phone.value=submittedPhone.textContent
+    candidate.value=submittedCandidate.textContent
+
+    submitBtn.textContent='update'
+    
+})
+
+addList.addEventListener('click',()=>{ 
+    const vote = {
+        email: submittedEmail.textContent,
+        username:submittedName.textContent,
+        phone:submittedPhone.textContent,
+        candidate:submittedCandidate.textContent
+    }
+
+    const userVote = JSON.parse(localStorage.getItem('votes')) || [];
+    userVote.push(vote)
+
+
+
+
+    const findUser = userVote.find((usr) => usr.email === email.value)
+    
+    
+    
+  
+
+    if (findUser) {
+        alert(`this user ${submittedEmail.textContent} already voted `);
+        return
+    }else{
+        localStorage.setItem('votes', JSON.stringify(userVote))
+    submiteModel.style.display = 'none'
+    }
+
     
 })
