@@ -7,6 +7,9 @@ const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirmPassword");
 const loginForm = document.querySelector("#login-form");
+const list = document.querySelector('.list')
+const sigin=document.querySelector(".Sign")
+
 
 let signIn = true;
 document.body.addEventListener("click", (e) => {
@@ -26,8 +29,8 @@ document.body.addEventListener("click", (e) => {
     formBtn.textContent = "sign in";
     username.style.display = "none";
     confirmPassword.style.display = "none";
-    username.value = "";
-    confirmPassword.value = "";
+    email.value = "";
+    password.value = "";
     formDescription.innerHTML = `
      i don't have account ? <a href="#" id="sign-click">Sign up</a>
     `;
@@ -48,11 +51,26 @@ loginForm.addEventListener("submit", (event) => {
       (usr) => usr.email === email.value && usr.password === password.value
     );
 
-    if (findUser) {
-      localStorage.setItem("currentUser", JSON.stringify(findUser));
-      alert("welcome to the dashboard");
+    if (email.value && password.value !== "") {
+      if (findUser) {
+        localStorage.setItem("currentUser", JSON.stringify(findUser));
+       window.location.href='home.html'
+       list.document.style.display='block'
+       sigin.innerHTML ='log out'
+
+      }else{
+        alert(`this user " ${email.value} " does not exist`)
+      }
+    }else{
+      alert('please fill the form')
     }
-  } else {
+
+    
+  } 
+  
+  
+  
+  else {
     if (username.value === "") {
       alert("its must to fill the form");
       return;
@@ -77,6 +95,6 @@ loginForm.addEventListener("submit", (event) => {
       alert("Password mismatch");
       return;
     }
-    window.location.href = "../html/login.html";
+    // window.location.href = "../html/login.html";
   }
 });

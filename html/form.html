@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-   
-    <div class="allInOne">
+    <nav class="navbar">
+        <div class="brand-title">Vote Management</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">candidates</a></li>
+                <li class="list"><a href="#" >List</a></li>
+                <li class="list"><a href="form.html" ><Form></Form></a></li>
+                
+            </ul>
+            <div class="btnsing"><a href="#" class="Sign">Sign in</a></div>
+        </div>
+    </nav>
+     <div class="allInOne">
     <div class="formContainer">
         <form action="" >
             <h1>Vote Registration</h1>
@@ -21,7 +40,7 @@
             <input type="text" name="" id="phone"><br>
             <label for="">Candidate:</label><br>
             <select name="" id="Candidate" >
-                <option value="" selected="0"></option>
+                <option value="" selected="0">Please select</option>
                 <option >Mc Hamouda</option>
                 <option >Mr sharafdin</option>
                 <option >Abdinasir Tman</option>
@@ -59,7 +78,7 @@
         </div>
     </div>
 </div>
-</div>
+</div> 
 
 
 <script src="../js/form.js"></script>
