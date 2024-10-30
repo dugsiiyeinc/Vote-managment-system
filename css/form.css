@@ -80,6 +80,7 @@ button {
     width: 650px;
 }
 
+
 .submitted-data {
     background-color: white;
     padding: 20px;
@@ -112,7 +113,7 @@ th {
     justify-content: space-between;
 }
 
-.btn {
+.btn1{
     
     padding: 10px 20px;
     border: none;
@@ -124,7 +125,7 @@ th {
     margin-right: 10px;
 }
 
-.btn.delete {
+ #delete {
     background-color: #00c0ff;
 }
 

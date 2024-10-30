@@ -8,8 +8,8 @@ const submittedCandidate = document.querySelector('#submittedCandidate');
 const submittedPhone = document.querySelector('#submittedPhone');
 const submittedName = document.querySelector('#submittedName');
 const submittedEmail = document.querySelector('#submittedEmail');
-const update = document.querySelector('.update')
-const addList = document.querySelector('.delete')
+const update = document.querySelector('#updatebtn')
+const addList = document.querySelector('#delete')
 
 
 submitBtn.addEventListener('click', (e)=>{
@@ -59,32 +59,43 @@ update.addEventListener('click',()=>{
 })
 
 addList.addEventListener('click',()=>{ 
+    const currentUser = JSON.parse(localStorage.getItem('currentUser')) || [];
+
+    if (!currentUser || !currentUser.email) {
+        alert("Please sign in to vote.");
+        return;
+    }
+
     const vote = {
-        email: submittedEmail.textContent,
-        username:submittedName.textContent,
-        phone:submittedPhone.textContent,
-        candidate:submittedCandidate.textContent
+        email1: submittedEmail.textContent,
+        username1:submittedName.textContent,
+        phone1:submittedPhone.textContent,
+        candidate1:submittedCandidate.textContent,
+        user:currentUser.email
     }
 
     const userVote = JSON.parse(localStorage.getItem('votes')) || [];
+    const findUser = userVote.find((usr) => usr.email1 ===  submittedEmail.textContent)
     userVote.push(vote)
 
 
-
-
-    const findUser = userVote.find((usr) => usr.email === email.value)
+   
     
+    // const findCU = currentUser.email !==  vote.user
     
-    
-  
-
-    if (findUser) {
-        alert(`this user ${submittedEmail.textContent} already voted `);
+    if (findUser ) {
+      alert(`this user ${submittedEmail.textContent} already voted `);
         return
-    }else{
-        localStorage.setItem('votes', JSON.stringify(userVote))
-    submiteModel.style.display = 'none'
     }
+    if (currentUser.email !== vote.user) {
+        alert("You can only vote with the signed-in account.");
+        return;
+    }
+        
+    localStorage.setItem('votes', JSON.stringify(userVote))
+    submiteModel.style.display = 'none'
+    alert('your have successfully registered')
+    
 
     
 })

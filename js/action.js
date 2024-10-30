@@ -30,9 +30,11 @@ btn3.addEventListener("click",()=>{
 
 
 
-const sigin=document.querySelector(".Sign")
-sigin.addEventListener("click",()=>{
-    window.location.href="/html/login.html"
+
+document.querySelector('#logoutbtn').addEventListener('click',function(){
+
+localStorage.removeItem('currentUser');
+window.location.href = '../index.html'
 })
 
 
