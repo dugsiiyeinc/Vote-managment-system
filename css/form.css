@@ -79,14 +79,14 @@ button {
     display: none;
     width: 650px;
 }
+.submiteModell{
+   margin: 50px auto;
+   width: 720px;
+}
 
 
 .submitted-data {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+   
 }
 
 table {
@@ -128,7 +128,10 @@ th {
  #delete {
     background-color: #00c0ff;
 }
-
+#warning{
+    text-align: center;
+    background-color: #ead986;
+}
 
 
 

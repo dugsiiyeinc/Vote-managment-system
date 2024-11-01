@@ -217,7 +217,7 @@ body{
     .navbar-links a:hover{
         color: white;
     }
-    .logoutbtn{
+    #logout{
      margin: 0;
     }
 
