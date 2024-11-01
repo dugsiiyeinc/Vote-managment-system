@@ -24,25 +24,7 @@ document.addEventListener('DOMContentLoaded',()=>{
        
         
      });
-    // alert('hello man')
-    // Object.entries(showVote).forEach(([key, value]) => {
-    //     console.log(key,value);
-    //     const showEmail = value
-    //     console.log( showEmail);
-        
 
-       
-
-       
-
-        // for (const key in element) {
-        //    console.log(element[key]);
-        //    const showEmail=element[key].emaill
-        //    console.log(showEmail);
-        // //     const showEmail = element[key].userNamel
-        // // 
-           
-        // }
        
        
        
@@ -51,75 +33,56 @@ document.addEventListener('DOMContentLoaded',()=>{
         
         
            
-            // <tbody>
-            //     <tr>
-            //         <td id="submittedEmail">${element.textContent}</td>
-            //         <td id="submittedName">${element.textContent}</td>
-            //         <td id="submittedPhone">${element.textContent}</td>
-            //         <td id="submittedCandidate">${element.textContent}</td>
-            //     </tr>
-            // </tbody>
+         
 
         
         
         
     });
-// })
 
 
 
+// function addformlist(element){
 
-
-// function showList(){
-//     const div = document.createElement('div')
-//     div.innerHTML=`
-     
-//     `
-//     submiteModell.appendChild(div)
-// }
-
-
-function addformlist(element){
-
-    const showVote = JSON.parse(localStorage.getItem('votes')) || [];
-    showVote.forEach (element=>{
-console.log(element);
+//     const showVote = JSON.parse(localStorage.getItem('votes')) || [];
+//     showVote.forEach (element=>{
+// console.log(element);
 
     
     
 
-    // e.preventDefault()
+//     // e.preventDefault()
 
-// if (userName.value.trim()   === '') {
+// // if (userName.value.trim()   === '') {
 
-//     alert('please fill the form')
-//     return
-// } 
-// else if(phone.value.trim() === ''){
-//     alert('please fill the form')
-//     return
-// }else if(candidate.value === ''){
-//     alert('please fill the form')
-//     return
-// }else if(email.value.trim()  === ''){
-//     alert('please fill the form')
-//     return
+// //     alert('please fill the form')
+// //     return
+// // } 
+// // else if(phone.value.trim() === ''){
+// //     alert('please fill the form')
+// //     return
+// // }else if(candidate.value === ''){
+// //     alert('please fill the form')
+// //     return
+// // }else if(email.value.trim()  === ''){
+// //     alert('please fill the form')
+// //     return
+// // }
+
+
+// // submiteModel.style.display = 'block'
+// submittedEmail.textContent=element.emaill;
+// submittedName.textContent=element.userNamel
+// submittedPhone.textContent=element.phonel
+// submittedCandidate.textContent=element.candidatel
+
+// // email.value=''
+// // userName.value=''
+// // phone.value=''
+// // candidate.value=''
+
+// // submitBtn.textContent='Submit'
+
+//     })
+
 // }
-
-
-// submiteModel.style.display = 'block'
-submittedEmail.textContent=element.emaill;
-submittedName.textContent=element.userNamel
-submittedPhone.textContent=element.phonel
-submittedCandidate.textContent=element.candidatel
-
-// email.value=''
-// userName.value=''
-// phone.value=''
-// candidate.value=''
-
-// submitBtn.textContent='Submit'
-
-    })
-
-}
