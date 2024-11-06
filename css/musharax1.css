@@ -9,7 +9,6 @@ body{
 }
 .musharax{
     margin: 50px auto;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -22,7 +21,6 @@ body{
 .contact{
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
 
 }
 .contact h3{

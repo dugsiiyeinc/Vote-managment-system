@@ -27,8 +27,6 @@ body{
 .navbar-links {
     height: 100%;
     display: flex;
-    /* gap: 50px; */
-    
 }
 .btnsing{
     margin-left: 200px;
@@ -137,7 +135,6 @@ body{
     align-items: center;
     width: 100%;
     gap: 20PX;
-    /* padding: 20PX; */
     margin-top: 10px;
     flex-wrap: wrap;
 }
@@ -180,7 +177,6 @@ body{
         margin-bottom: 20px;
     }
     .accordion{
-       /* background-color: rgb(211, 203, 203); */
        margin:0 auto;
        max-width: 600px;
        margin-top: 10px;
@@ -206,7 +202,18 @@ body{
         display: none;
     }
 
-
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+/* #profile-id{
+    margin-top: 43px;
+    margin-right: 60px;
+} */
 
 
 
@@ -261,7 +268,6 @@ body{
         transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
     }
 
-    /* Change the toggle button bars for the open state */
     .navbar.active .toggle-button .bar:nth-child(2) {
         opacity: 0;
     }
@@ -280,7 +286,6 @@ body{
 
     .infocontact{
         width: 100%;
-        /* margin-top: 100px; */
     }
     .heroimg{
         width: 100%;

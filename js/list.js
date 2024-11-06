@@ -18,8 +18,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 
         const voteEntry = document.createElement('tr');
         voteEntry.classList.add('submitted-data-form');
-
-        // Add the vote details within the row
         voteEntry.innerHTML = `
          <table>
             <td >${element.email1}</td>
@@ -29,8 +27,6 @@ document.addEventListener('DOMContentLoaded',()=>{
            
             </table>
         `;
-
-        // Append the row to the table
         submittedDatal.appendChild(voteEntry);
     });
 });

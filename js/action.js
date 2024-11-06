@@ -1,9 +1,22 @@
 const toggleButton = document.querySelector('.toggle-button');
 const navbar = document.querySelector('.navbar');
 
+const profile = document.querySelector('#profile-id');
+const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+console.log(currentUser);
+
+profile.textContent = currentUser.username
+
+document.querySelector('#logoutbtn').addEventListener('click',function(){
+
+    localStorage.removeItem('currentUser');
+    window.location.href = '../index.html'
+    })
+
 toggleButton.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
+
 
 
 const btn1=document.querySelector(".btn")
@@ -27,11 +40,7 @@ btn3.addEventListener("click",()=>{
 }
 )
 
-document.querySelector('#logoutbtn').addEventListener('click',function(){
 
-localStorage.removeItem('currentUser');
-window.location.href = '../index.html'
-})
 
 const faqs=[
     {
@@ -67,3 +76,9 @@ faqs.map((faq)=>{
     })
     accordion.appendChild(accordionItem)
 })
+
+
+
+
+
+   

@@ -81,7 +81,7 @@ addList.addEventListener('click',()=>{
 
    
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-    console.log(currentUser.email);
+    
     
     
     
