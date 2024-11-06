@@ -12,7 +12,7 @@ back.addEventListener('click',()=>{
     console.log('hello');
     
      
-    window.location.href='home.html'
+    window.location.href='../index.html'
     
 })
 voteNow.addEventListener('click',(e)=>{
