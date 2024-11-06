@@ -27,25 +27,11 @@ btn3.addEventListener("click",()=>{
 }
 )
 
-
-
-
-
 document.querySelector('#logoutbtn').addEventListener('click',function(){
 
 localStorage.removeItem('currentUser');
 window.location.href = '../index.html'
 })
-
-
-
-
-
-
-
-
-
-
 
 const faqs=[
     {
@@ -60,8 +46,6 @@ const faqs=[
         answer:"All candidates and supporters must engage in respectful and fair campaigning, promoting a positive and inclusive environment for all voters."
     },
 ]
-
-
 
 const accordion=document.querySelector(".accordion")
 

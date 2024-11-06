@@ -3,7 +3,8 @@ const userName2 = document.querySelector('#name');
 const email2 = document.querySelector('#email');
 const phone2= document.querySelector('#phone');
 const candidate2= document.querySelector('#Candidate');
-const submiteModell = document.querySelector('.submiteModell');
+const submiteModelll = document.querySelector('.submiteModell-form');
+const submittedDatal = document.querySelector('.submitted-data-form');
 const submittedCandidatel = document.querySelector('#submittedCandidate');
 const submittedPhonel = document.querySelector('#submittedPhone');
 const submittedNamel = document.querySelector('#submittedName');
@@ -12,77 +13,30 @@ const submittedEmaill = document.querySelector('#submittedEmail');
 
 document.addEventListener('DOMContentLoaded',()=>{
     const showVote = JSON.parse(localStorage.getItem('votes')) || [];
-    // showVote.push(v)
+ 
+    showVote.forEach(element => {
 
-     showVote.forEach(element => {
-        console.log(element);
-        
-        submittedEmail.textContent=element.email1;
-        submittedName.textContent=element.username1
-        submittedPhone.textContent=element.phone1
-        submittedCandidate.textContent=element.candidate1
-       
-        
-     });
+        const voteEntry = document.createElement('tr');
+        voteEntry.classList.add('submitted-data-form');
 
-       
-       
-       
-    
-       
-        
-        
+        // Add the vote details within the row
+        voteEntry.innerHTML = `
+         <table>
+            <td >${element.email1}</td>
+            <td>${element.username1}</td>
+            <td>${element.phone1}</td>
+            <td>${element.candidate1}</td>
            
-         
+            </table>
+        `;
 
-        
-        
-        
+        // Append the row to the table
+        submittedDatal.appendChild(voteEntry);
     });
+});
 
 
 
-// function addformlist(element){
-
-//     const showVote = JSON.parse(localStorage.getItem('votes')) || [];
-//     showVote.forEach (element=>{
-// console.log(element);
-
-    
-    
-
-//     // e.preventDefault()
-
-// // if (userName.value.trim()   === '') {
-
-// //     alert('please fill the form')
-// //     return
-// // } 
-// // else if(phone.value.trim() === ''){
-// //     alert('please fill the form')
-// //     return
-// // }else if(candidate.value === ''){
-// //     alert('please fill the form')
-// //     return
-// // }else if(email.value.trim()  === ''){
-// //     alert('please fill the form')
-// //     return
-// // }
 
 
-// // submiteModel.style.display = 'block'
-// submittedEmail.textContent=element.emaill;
-// submittedName.textContent=element.userNamel
-// submittedPhone.textContent=element.phonel
-// submittedCandidate.textContent=element.candidatel
 
-// // email.value=''
-// // userName.value=''
-// // phone.value=''
-// // candidate.value=''
-
-// // submitBtn.textContent='Submit'
-
-//     })
-
-// }

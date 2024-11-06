@@ -67,6 +67,8 @@ loginForm.addEventListener("submit", function(event) {
 
       }else{
         alert(`this user " ${email.value} " does not exist`)
+        username.textContent=''
+        password.textContent=''
       }
 
       

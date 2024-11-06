@@ -79,20 +79,27 @@ button {
     display: none;
     width: 650px;
 }
-.submiteModell{
+.submiteModell-form{
    margin: 50px auto;
    width: 720px;
 }
+.listRow{
+    margin: 50px auto;
+    width: 720px;
+}
 
 
 
-table {
+table,tr {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+   
 }
 
-th, td {
+
+
+th, td, tr {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
