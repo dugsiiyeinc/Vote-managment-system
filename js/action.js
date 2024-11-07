@@ -1,11 +1,7 @@
 const toggleButton = document.querySelector('.toggle-button');
 const navbar = document.querySelector('.navbar');
 
-const profile = document.querySelector('#profile-id');
-const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-console.log(currentUser);
 
-profile.textContent = currentUser.username
 
 document.querySelector('#logoutbtn').addEventListener('click',function(){
 
@@ -81,4 +77,8 @@ faqs.map((faq)=>{
 
 
 
-   
+const profile = document.querySelector('#profile-id');
+const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+console.log(currentUser);
+
+profile.textContent = currentUser.username
